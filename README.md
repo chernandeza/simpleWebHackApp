@@ -1,2 +1,2 @@
 # dumbWebHackApp
-Simple "Hacking" Exercise for beginneers
+Simple "Hacking" Exercise for beginners
