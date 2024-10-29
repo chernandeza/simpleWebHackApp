@@ -13,7 +13,7 @@ echo "password.txt has been updated."
 container_id=$(docker ps --filter "ancestor=password-cracking-app" --format "{{.ID}}")
 
 if [ -z "$container_id" ]; then
-    echo "No container running the 'password-cracking-app' image found."
+    echo "No container running the 'password-cracker-app' image found."
     exit 1
 fi
 
