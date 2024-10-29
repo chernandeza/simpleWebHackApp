@@ -10,7 +10,7 @@ echo "$attempts" >> password.txt
 echo "password.txt has been updated."
 
 # Get the container ID of the container running the password-cracking-app image
-container_id=$(docker ps --filter "ancestor=password-cracking-app" --format "{{.ID}}")
+container_id=$(docker ps --filter "ancestor=password-cracker-app" --format "{{.ID}}")
 
 if [ -z "$container_id" ]; then
     echo "No container running the 'password-cracker-app' image found."
