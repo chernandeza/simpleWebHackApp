@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define container names
-PASSWORD_CRACKER_CONTAINER="password-cracker-app"
+PASSWORD_CRACKER_CONTAINER="password-cracking-app"
 PHISHING_WEBFORM_CONTAINER="phishing-webform"
 
 # Function to remove existing containers if they are running
@@ -35,7 +35,7 @@ docker run -d -p 8080:80 --name $PHISHING_WEBFORM_CONTAINER $PHISHING_WEBFORM_CO
 # Check if the containers are running
 echo "Checking container status..."
 if [ $(docker ps -q -f name="$PASSWORD_CRACKER_CONTAINER") ]; then
-    echo "password-cracker-app is running on port 3000"
+    echo "password-cracking-app is running on port 3000"
 else
     echo "Failed to start password-cracker-app."
 fi
