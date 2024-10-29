@@ -26,7 +26,7 @@ cleanup
 
 # Start the password-cracker-app container
 echo "Starting the password-cracker-app container..."
-docker run -p 3000:3000 --name $PASSWORD_CRACKER_CONTAINER $PASSWORD_CRACKER_CONTAINER
+docker run -d -p 3000:3000 --name $PASSWORD_CRACKER_CONTAINER $PASSWORD_CRACKER_CONTAINER
 
 # Start the phishing-webform container
 echo "Starting the phishing-webform container in detached mode..."
