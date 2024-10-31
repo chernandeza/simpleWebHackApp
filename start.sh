@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define container names
-PASSWORD_CRACKER_CONTAINER="password-cracking-app"
+PASSWORD_CRACKER_CONTAINER="password-cracker-app"
 PHISHING_WEBFORM_CONTAINER="phishing-webform"
 
 # Function to remove existing containers if they are running
